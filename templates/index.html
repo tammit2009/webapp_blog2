@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <p>This is my first web page!!!</p>
+    <p>My first name is {{ first_name }}</p>
+    <!-- <p>{{ stuff | safe }}</p> -->
+    <!-- <p>{{ stuff | striptags }}</p> -->
+
+    <h3>Favorite Pizza</h3>
+
+    {% for topping in favorite_pizza %}
+        {% if topping == 41 %}
+            {{ topping + 100 }}<br/>
+        {% else %}
+        {{ topping }}<br/>
+        {% endif %}
+    {% endfor %}
+
+    <br/><br/>
+    {{ favorite_pizza.0 }}
+    <br/>
+    {{ favorite_pizza.3 + 10 }}
+
+</body>
+</html>
