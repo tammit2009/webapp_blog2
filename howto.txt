@@ -72,6 +72,7 @@ $ touch .gitignore
 
     # .gitignore
     .gitignore
+    howto.txt
 
     virt/
     
@@ -84,5 +85,15 @@ $ git config --global user.email "tb.takaya@gmail.com"
 $ git config --global push.default matching
 $ git config --global alias.co checkout
 $ git init
+$ git add .
+$ git commit -am 'Initial Commit'
+
+# On github, create a new repository "webapp_blog2"
+# Select the lines to push existing repository from command line
+$ git remote add origin https://github.com/tammit2009/webapp_blog2.git
+$ git branch -M main
+$ git push -u origin main
+
+
 
 
